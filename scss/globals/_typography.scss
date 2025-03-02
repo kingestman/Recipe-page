@@ -1,0 +1,57 @@
+@use '../utils/' as u;
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    margin-top: 0;
+
+    font-family: 'Young Serif', serif;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-size: clamp(
+        2.25rem,
+        2.0114503816793894rem + 1.0178117048346056vw,
+        2.5rem
+    );
+
+    line-height: 1;
+    margin-block-end: u.rem(24);
+    color: var(--main-heading-color);
+}
+
+h3 {
+    font-size: u.rem(28);
+    line-height: 1;
+    margin-block-end: u.rem(24);
+    color: var(--h3-color);
+}
+
+h4 {
+    font-size: u.rem(20);
+    font-weight: 600;
+    font-family: 'Outfit', serif;
+    color: var(--h4-color);
+    margin-block-end: 16px;
+}
+
+p {
+    font-size: u.rem(16);
+    line-height: 1.5;
+    margin-block-end: u.rem(8);
+    color: var(--pharagraph-color);
+
+    &.outfit {
+        font-family: 'Outfit', serif;
+    }
+
+    &.gabarito {
+        font-family: 'Gabarito', serif;
+    }
+
+    &.nutritions {
+        color: var(--nutrition-color);
+    }
+}

@@ -1,0 +1,32 @@
+@use '../utils/' as u;
+
+#main {
+    @include u.breakpoint(medium) {
+        margin-block: 128px;
+        margin-inline: clamp(
+            4.75rem,
+            -14.964285714285715rem + 41.07142857142857vw,
+            22rem
+        );
+        border-radius: 24px;
+    }
+}
+
+.main-image {
+    @include u.breakpoint(medium) {
+        width: min(100% - u.rem(64), u.rem(1440));
+        margin-inline: auto;
+        width: fit-content;
+        padding-block-start: 40px;
+        margin-block-end: 40px;
+    }
+
+    &__image {
+        transform: scale(102%);
+        max-width: u.rem(656);
+
+        @include u.breakpoint(medium) {
+            transform: scale(100%);
+        }
+    }
+}

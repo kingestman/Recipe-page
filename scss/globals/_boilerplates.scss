@@ -1,0 +1,80 @@
+@use '../utils/' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+#main {
+    background-color: var(--main-bg-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figure,
+blockquote {
+    margin: 0;
+}
+
+ol,
+ul {
+    margin-block-end: 0;
+}
+
+ol li,
+ul li {
+    color: var(--list-color);
+}
+
+section {
+    margin-block-end: 32px;
+}
+
+section:last-child {
+    padding-block-end: 40px;
+    margin-block-end: 0;
+}
+
+ol li span,
+ul li span {
+    color: var(--pharagraph-color);
+    display: block;
+    margin-block-end: 8px;
+    padding-inline-start: 16px;
+    font-family: 'Outfit', serif;
+    line-height: 1.5;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+        left: 0;
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        padding: 0.5rem;
+        border: 1px solid;
+    }
+}

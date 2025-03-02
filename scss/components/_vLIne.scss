@@ -1,0 +1,7 @@
+.vLine {
+    &__wrapper {
+        display: block;
+        height: 1px;
+        background-color: var(--line-color);
+    }
+}

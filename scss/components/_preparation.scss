@@ -1,0 +1,10 @@
+.preparation {
+    &__block {
+        background-color: var(--block-bg-color);
+        padding: 24px 24px;
+    }
+
+    &__list-item {
+        color: hsl(14, 45%, 36%);
+    }
+}

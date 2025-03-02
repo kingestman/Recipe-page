@@ -1,0 +1,16 @@
+.nutrition {
+    &__table-item {
+        padding-inline-start: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__table-item p {
+        font-family: 'Outfit', serif;
+        display: inline;
+    }
+
+    &__table-item p:nth-child(2) {
+        font-weight: bold;
+    }
+}
